@@ -63,6 +63,9 @@ You can find more information on the [Support page](https://travelmap.net/suppor
 
 == Changelog ==
 
+= 1.0.3 =
+* Fix embed code showing world map
+
 = 1.0.2 =
 * Fix XSS vulnerability. Patched on our end so all the previous versions are secure as well.
 

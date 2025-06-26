@@ -2,8 +2,8 @@
 /*
 Plugin Name: TravelMap Itinerary
 Plugin URI: https://wordpress.org/support/plugin/travelmap-blog/
-Description: Create and display a beautiful, interactive travel map on your website. Choose your transport modes, update your itinerary using geolocation, etc.
-Version: 1.0.2
+Description: Create and display an interactive travel map on your website. Choose your transport modes, update your itinerary using geolocation, etc.
+Version: 1.0.3
 Author: TravelMap
 Author URI: https://travelmap.net
 Text Domain: travelmap-blog
@@ -56,13 +56,18 @@ class TravelMap
 		// print '<pre>'; print_r($data); print '</pre>';
 
 		// URL
-		if ( !isset($data['url']) ) {
+		if ( isset($data['href']) ) {
+			$data['url'] = $data['href'];
+		}
+		else if ( !isset($data['url']) ) {
 			$wp_user_id = get_option( TRAVELMAP_WP_USER_KEY );
 			$data['url'] = TRAVELMAP_WP_URL.'/'.$wp_user_id.'?map-only=1';
 		}
+
 		// Map only
-		if ( isset($data['map-only']) && $data['map-only'] && strpos($data['url'], '?') === false )
+		if ( isset($data['map-only']) && $data['map-only'] && strpos($data['url'], '?') === false ) {
 			$data['url'] = $data['url'].'?map-only=1';
+		}
 
 		// Width
 		if ( !isset($data['width']) ) {

@@ -8,6 +8,7 @@
 ```
 
 ## Internationalization (i18n)
+
 ## Generate .pot, .po, .mo files
 
 ```shell
@@ -24,3 +25,9 @@
 	msgfmt -o languages/travelmap-blog-fr_BE.mo languages/travelmap-blog-fr.po
 	msgfmt -o languages/travelmap-blog-fr_CA.mo languages/travelmap-blog-fr.po
 ```
+
+## Deploy
+
+For simple readme changes, git push to `master` and check the GitHub Action `10up/action-wordpress-plugin-asset-update`.
+
+To tag new versions, install: https://github.com/10up/action-wordpress-plugin-deploy

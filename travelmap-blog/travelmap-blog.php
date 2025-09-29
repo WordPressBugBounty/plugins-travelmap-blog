@@ -3,7 +3,7 @@
 Plugin Name: TravelMap Itinerary
 Plugin URI: https://wordpress.org/support/plugin/travelmap-blog/
 Description: Create and display an interactive travel map on your website. Choose your transport modes, update your itinerary using geolocation, etc.
-Version: 1.0.3
+Version: 1.0.4
 Author: TravelMap
 Author URI: https://travelmap.net
 Text Domain: travelmap-blog

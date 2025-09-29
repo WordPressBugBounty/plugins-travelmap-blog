@@ -3,7 +3,7 @@ Contributors: travelmap, stephaneguigne
 Tags: travelmap, map, itinerary, points, lines
 Requires at least: 3.0.1
 Tested up to: 6.8
-Stable tag: 1.0.2
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,6 +62,9 @@ You can find more information on the [Support page](https://travelmap.net/suppor
 4. Shortcode example - Map displaying inside a post
 
 == Changelog ==
+
+= 1.0.4 =
+* Fix CSRF issue on unused /clear-account endpoint
 
 = 1.0.3 =
 * Fix embed code showing world map

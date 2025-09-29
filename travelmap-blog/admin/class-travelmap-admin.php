@@ -67,11 +67,11 @@ class TravelMap_Admin
 	public function get_admin_page_url()
 	{
 		// Clear user id
-		if ( isset($_REQUEST['clear-account']) && $_REQUEST['clear-account'] === '1' ) {
-			$this->clear_user_id();
+		// if ( isset($_REQUEST['clear-account']) && $_REQUEST['clear-account'] === '1' ) {
+		// 	$this->clear_user_id();
 
-			die('Account cleared.');
-		}
+		// 	die('Account cleared.');
+		// }
 
 		// User id
 		$wp_user_id = $this->get_user_id();
@@ -98,6 +98,7 @@ class TravelMap_Admin
 		return $wp_user_id;
 	}
 	
+	// Deprecated
 	public function clear_user_id()
 	{
 		delete_option( TRAVELMAP_WP_USER_KEY );

@@ -30,4 +30,11 @@
 
 For simple readme changes, git push to `master` and check the GitHub Action `10up/action-wordpress-plugin-asset-update`.
 
-To tag new versions, install: https://github.com/10up/action-wordpress-plugin-deploy
+To deploy new versions on WordPress, run:
+
+```bash
+git tag v1.0.3
+git push origin v1.0.3
+```
+
+See: https://github.com/10up/action-wordpress-plugin-deploy

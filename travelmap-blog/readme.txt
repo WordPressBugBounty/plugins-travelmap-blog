@@ -2,8 +2,8 @@
 Contributors: travelmap, stephaneguigne
 Tags: travelmap, map, itinerary, points, lines
 Requires at least: 3.0.1
-Tested up to: 6.9
-Stable tag: 1.0.4
+Tested up to: 7.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,6 +62,10 @@ You can find more information on the [Support page](https://travelmap.net/suppor
 4. Shortcode example - Map displaying inside a post
 
 == Changelog ==
+
+= 1.0.5 =
+* Remove the shadow around the map, the map now draws its own edge
+* Make the default map height 550px
 
 = 1.0.4 =
 * Fix CSRF issue on unused /clear-account endpoint

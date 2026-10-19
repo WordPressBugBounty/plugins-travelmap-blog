@@ -33,6 +33,8 @@ For simple readme changes, git push to `master` and check the GitHub Action `10u
 To deploy new versions on WordPress, run:
 
 ```bash
+git push origin master
+# Wait for the readme update action to finish, or the deploy fails
 git tag v1.0.3
 git push origin v1.0.3
 ```
